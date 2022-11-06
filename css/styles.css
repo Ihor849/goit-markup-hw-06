@@ -262,10 +262,11 @@ section hero
 
 .button-hero,
 .navigation-butten {
-    cursor: pointer
+    cursor: pointer;
 }
 
-.button-hero {
+.button-hero,
+.btn-modal-form {
     padding: 10px 32px;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -637,15 +638,121 @@ Modal window
     background-color: #FFFFFF;
     
 }
-
 .button-close {
-    width: 11px;
-    height: 11px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.button-close:hover {
+   fill: #188CE8;
+}
+/* ================================ */
 
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+}
+
+.form-title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    color: #212121;
+}
+
+.form-group {
+    margin-bottom: 10px;
+   
+}
+.label-icon {
+position: relative;
+}
+.label {
+    
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+.form-field {
+position: relative;
+    padding: 0;
+    width: 448px;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.form-group-lable {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-textarea {
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.mark-agreement {
+   padding: 0;
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+
+    
+    color: #212121;
+}
+
+.agreement {
+
+    font-size: 14px;
+    line-height: 24px;
+    color: #757575;
+}
+
+.agreement-span {
+    text-decoration: underline;
+    color: #2196F3;
+}
+
+.mark-agreement {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: #757575;
 }
 
 
 
+.btn-modal-form {
+    width: 200px;
+    height: 50px;
+    padding: 10px 52px;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+.btn-modal-form:hover {
+    background-color: #188CE8;
+}
+
+/* 
+================================================ 
+*/
 
 /* PORTFOLIO */
 
@@ -857,7 +964,7 @@ margin-bottom: 0;
 
 .subscribe {
     margin-left: auto;
-    
+
 }
 
 .subscribe-text {
@@ -870,7 +977,7 @@ margin-bottom: 0;
 }
 
 
-   
+
 .subscribe-field {
     width: 358px;
     height: 50px;
@@ -878,7 +985,7 @@ margin-bottom: 0;
     padding-bottom: 15px;
     padding-left: 16px;
     margin-right: 12px;
-    
+
     background-color: inherit;
     color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -895,7 +1002,8 @@ margin-bottom: 0;
     height: 50px;
     align-items: center;
     justify-content: center;
-  
+    cursor: pointer;
+
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -919,9 +1027,7 @@ margin-bottom: 0;
     width: 24px;
     height: 24px;
     margin-left: 10px;
-   
-    fill: #EEEEEE;
-    
-}
 
+    fill: #EEEEEE;
+}
 
