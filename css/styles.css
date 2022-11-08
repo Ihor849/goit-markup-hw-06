@@ -797,48 +797,6 @@ border: 1px solid #2196F3;
     line-height: calc(24 / 14);
 }
 
-/* .treaty-text::before {
-    content: "";
-    width: 16px;
-    height: 15px;
-    background-color: #000000;
-} */
-
-
-
-/* .agreement-check {
-    padding-left: 15px;
-    font-size: 14px;
-    line-height: 24px;
-} */
-
-/* .form-input {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-} */
-/* .agreement-check {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-} */
-
-/* .form-field-comment {
-    padding-left: 7px;
-} */
-
-/* .form-label {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    font-style: normal;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* .form-input:checked + .form-label {
-    color: #2196F3;
-    text-decoration: underline
-    
-} */
-
-
 .btn-modal-form {
     width: 200px;
     height: 50px;
