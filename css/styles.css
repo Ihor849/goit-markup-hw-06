@@ -318,11 +318,9 @@ sections WebStudio
     overflow: hidden;
 }
 
-
 .about-us {
     display: flex;
     flex-wrap: wrap;
-/* outline: 2px solid blue; */
 }
 
 
@@ -348,7 +346,6 @@ sections WebStudio
     background: rgba(245, 244, 250, 1);
     padding: 25px 100px;
     border-radius: 4px;
-    /* outline: 2px solid blue; */
 }
 
 
@@ -360,8 +357,6 @@ sections WebStudio
     flex-wrap: wrap;
     gap: 30px;
 }
-
-
 
 .card-list {
     position: relative;
@@ -493,7 +488,7 @@ sections WebStudio
 
 .link-team:hover,
 .link-team:focus {
-background-color: #2196F3;
+background-color: #188CE8;
 fill: var(--main-background);
 }
 
@@ -549,7 +544,7 @@ fill: var(--main-background);
 .title-list-clients:focus,
 .title-list-clients:hover {
     border-color: 1px solid var(--accent-color);
-    color: #2196F3;
+    color: #188CE8;
 }
 
 .client {
@@ -613,6 +608,7 @@ Modal window
     transform: translate(-50%, -50%);
     min-width: 528px;
     min-height: 581px;
+    padding: 40px;
     border-radius: 4px;
     box-shadow:
     0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -632,31 +628,33 @@ Modal window
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: #FFFFFF;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
     
 }
+
+.button-modal:focus,
+.button-modal:hover {
+    border: 1px solid #188CE8;
+}
+
 .button-close {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
+ 
 .button-close:hover {
    fill: #188CE8;
+
 }
 /* ================================ */
 
-.form {
-    flex-direction: column;  
-    width: 528px;
-    padding: 40px;
-}
 
 .form-group {
     position: relative;
-    display: flex;
     margin-bottom: 28px;
-    
 }
 
 .form-group:nth-last-child(3) {
@@ -674,31 +672,25 @@ Modal window
 
 .form-field {
     width: 100%;
-    margin: 0;
-    padding: 10px 20px;
-    padding-left: 40px;
+    margin-top: 4px;
+    padding: 10px 10px 10px 35px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    caret-color: #2196F3;
+    caret-color: #188CE8;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
     
 }
 
 .form-field:focus ~ .form-icon {
-    color: #2196F3;
+    color: #2196F3
 }
 
 .form-field:focus {
-border: 1px solid #2196F3;
+border: 1px solid #2196F3
 }
 
 
 .label {
-    position: absolute;
-    top: -35%;
-    left: 0;
-
-    margin-bottom: 4px;
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
@@ -708,25 +700,21 @@ border: 1px solid #2196F3;
 
 .form-icon {
     position: absolute;
-    bottom:  50%;
-    transform: translateY(50%);
+    bottom: 50%;
+    transform: translateY(115%);
     left: 12px;
-    width: 100%;
     width: 18px;
     height: 18px;
     fill: currentColor;
+    color: #212121;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-
-
 .form-coment {
-    position: relative;
     display: flex;
-   
     flex-direction: column;
-    margin-bottom: 30px;
+   
 }
 
 .comment-title {
@@ -739,81 +727,128 @@ border: 1px solid #2196F3;
 
 }
 
-.form-textarea {
-    width: 448px;
-    height: 120px;
-    /* padding: 12px 16px; */
-    resize: none;
-    margin-bottom: 20px;
+.form-coment-textarea {
+    padding: 12px 16px;
+    color: #757575;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    resize: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-coment-textarea:focus {
+    border: 1px solid #188CE8;
+} 
+
+
+
+.form-textarea {
+    margin-bottom: 20px;
+}
+
+/* ============================================ */
+
+.agreement-check {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 
-.treaty {
+
+.agreement-check {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+}
+
+.form-field-comment {
+    margin-bottom: 30px;
     display: flex;
-    align-items: center
-}
-
-.treaty-icon {
-    width: 16px;
-    height: 15px;
-    margin-left: 13px;
-    border: 1px solid var(--primary-text-color);
-    border-radius: 2px;
-    fill: currentColor;
-    color: #FFFFFF;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.treaty-icon:focus {
-    fill: #2196F3;
-    
+    align-items: center;
 
 }
 
 
-.treaty-icon:focus ~ .text-span {
-    color: #2196F3;
-    text-decoration: underline
+/* 
++++++++======+++++++=======+++++++======
+*/
+.checkbox {
+margin-bottom: 30px;
 }
 
-.treaty-text-span {
-    margin-right: 6px;
-    margin-left: 7px;
+
+.chec-label {
+    position: relative;
     font-size: 14px;
+    margin-left: 36px;
     line-height: calc(24 / 14);
-}
-.text-span {
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    color: #757575;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.treaty-text {
-    margin: auto;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+.chec-input {
+    position: absolute; 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
+
+.chec-input:focus ~ .text-span {
+    color:#2196F3;
+    text-decoration: underline
+}
+
+.chec-input:focus + .icon {
+    border-color: #2196F3;
+}
+.chec-input:checked ~ .icon {
+    background-color: #188CE8;;
+    background-image: url(../images/icons.svg/Vicon\ check\ \(1\).svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: #2196F3;
+
+}
+
+.icon {
+    position: absolute;
+    left: -23px;
+    bottom: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    border-radius: 2px;
+
+}
+
+
 
 .btn-modal-form {
     width: 200px;
-    height: 50px;
     padding: 10px 52px;
     display: flex;
     margin: auto;
     cursor: pointer;
+    transition: background-colo 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-modal-form:hover {
     background-color: #188CE8;
+   
 }
 
-
-
 /* 
-================================================ 
+++++++++++++++++++++++++++++++++++++++++++++++++++
 */
 
 /* PORTFOLIO */
@@ -1093,3 +1128,15 @@ margin-bottom: 0;
     fill: #EEEEEE;
 }
 
+/* .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */
