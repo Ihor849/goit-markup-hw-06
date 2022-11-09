@@ -635,26 +635,27 @@ Modal window
     cursor: pointer;
     
 }
-
-.button-modal:focus,
-.button-modal:hover {
-    border: 1px solid #188CE8;
+.button-modal:hover,
+.button-modal:focus > .button-close {
+    fill: #2196F3
 }
+
+/* .button-modal:hover {
+    border: 1px solid #2196F3
+} */
 
 .button-close {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
- 
-.button-close:hover {
-   fill: #188CE8;
 
-}
+
+
 /* ================================ */
 
 
 .form-group {
     position: relative;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 }
 
 .form-group:nth-last-child(3) {
@@ -662,7 +663,7 @@ Modal window
 }
 
 .form-title {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: calc(23 / 20);
@@ -712,37 +713,34 @@ border: 1px solid #2196F3
 }
 
 .form-coment {
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
    
 }
 
-.comment-title {
-    margin-bottom: 4px;
-
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
-    color: var(--primary-text-color);
-
-}
 
 .form-coment-textarea {
+    width: 448px;
+    height: 120px;
     padding: 12px 16px;
-    color: #757575;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-top: 4px;
     border-radius: 4px;
     resize: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-coment-textarea:focus {
     border: 1px solid #188CE8;
+
 } 
 
-
-
 .form-textarea {
-    margin-bottom: 20px;
+    color: #212121;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
 }
 
 /* ============================================ */
@@ -782,6 +780,7 @@ margin-bottom: 30px;
     margin-left: 36px;
     line-height: calc(24 / 14);
     color: #757575;
+    cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -801,7 +800,7 @@ margin-bottom: 30px;
 }
 
 
-.chec-input:focus ~ .text-span {
+.text-span {
     color:#2196F3;
     text-decoration: underline
 }
@@ -1083,8 +1082,7 @@ margin-bottom: 0;
     padding-left: 16px;
     margin-right: 12px;
 
-    background-color: inherit;
-    color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: inherit;
