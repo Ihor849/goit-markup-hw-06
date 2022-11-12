@@ -243,7 +243,7 @@ section hero
     background-size: cover;
     background-image: linear-gradient(to right,
     rgba(49, 47, 58, 0.4), rgba(49, 47, 58, 0.4)),
-    url(../images/hero.jpg);
+    url(../images-1/hero.jpg);
     text-align: center;
 }
 
